@@ -27,7 +27,7 @@ session = Session()
 
 clubs = session.query(Club).join(Jugador).\
         filter(Jugador.nombre.like("%Da%")).all()
-# print(clubs)
+print(clubs)
 print("Consulta 1 ")
 """
 Consulta 1 
@@ -44,7 +44,7 @@ Club: nombre=Barcelona deporte=Fútbol fundación=1920
 # join aplicado a query
 # en el query se ubican las dos entidades involucradas
 # 
-
+print("Holaaaaaaaaaaaaaaaaaa")
 registros = session.query(Club, Jugador).join(Jugador).\
          filter(Jugador.nombre.like("%Da%")).all()
  
